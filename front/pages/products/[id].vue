@@ -1,12 +1,11 @@
 <template>
-
-    <v-container>
+    <v-container class="id">
         <h1>{{ product.title }}</h1>
-        <v-img :src="URL_BACK+product.img" height="264px"></v-img>
-        <p>{{ product.text }}</p>
-        <p>{{ product.made }}</p>
+        <v-img :src="URL_BACK + product.img" height="264px"></v-img>
+        <p id="m_top">{{ product.text }}</p>
+        
+        <p> Цена: {{ product.made }} р.</p>
     </v-container>
- 
 </template>
   
 <script setup>
@@ -24,5 +23,14 @@ definePageMeta({
 </script>
   
 <style scoped>
-  
+    .id {
+        width: 50%;
+        float: left;
+        text-align: justify;
+        margin-right: 20px;
+    }
+
+    #m_top{
+        margin-top: 25px;
+    }
 </style>
