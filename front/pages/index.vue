@@ -1,4 +1,6 @@
 <template>
+    <v-container>
+
         <div class="homec">
             <h1>Домашняя страница</h1>
         </div>
@@ -17,6 +19,7 @@
                 </v-row>
             </v-col>
         </v-row>
+    </v-container>
 </template>
 
 <script setup>
@@ -43,10 +46,18 @@ const { data: products } = await useFetch(url)
 
     text-align: left;
 }
+
+.homec {
+    margin-left: 7px;
+    margin-top: -63px;
+}
+
+
+
 .homec {
     margin-left: 15px;
     margin-top: -63px;
 }
 
-
 </style>
+
