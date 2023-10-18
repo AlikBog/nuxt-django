@@ -51,8 +51,6 @@ const links = [
 
     { name: 'О нас', href: '/about' }
 
-    { name: 'О нас', href: '/about' },
-
 ]
 </script>
 
