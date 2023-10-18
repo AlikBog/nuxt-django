@@ -1,5 +1,6 @@
 <template>
     <v-app>
+
         <header>
             <v-app-bar
             app
@@ -18,7 +19,6 @@
                 </v-btn>
 
             </v-app-bar-title>
-
             </v-app-bar>
         </header>
 
@@ -34,15 +34,13 @@
                     variant="text"
                     class="mx-2 rotate-btn"
                     rounded="xl"
-                    :to=link.href
-                >
+                    :to=link.href>
                     {{ link.name }}
                 </v-btn>
             </v-row>
-
         </v-footer>
+
     </v-app>
-    
 </template>
 
 <script setup>
@@ -50,8 +48,11 @@ const basketStore = useBasketStore()
 
 const links = [
     { name: 'Главная', href: '/' },
+
+    { name: 'О нас', href: '/about' }
+
     { name: 'О нас', href: '/about' },
-    { name: 'Каталог', href: '/products' },
+
 ]
 </script>
 
@@ -63,6 +64,7 @@ const links = [
   color: grey;
 } */
 
+
 /* .router-link-exact-active {
   color: #12b488;
 } */
@@ -72,6 +74,16 @@ const links = [
 header {
     background-color: black;
 }
+
+
+
+/* .router-link-exact-active {
+  color: #12b488;
+} */
+
+
+
+
 
 
 footer{
@@ -88,6 +100,9 @@ header {
 .itets {
     margin-top: 40px;
 
+
+
+
 }
 
 .mx-2 {
@@ -99,11 +114,11 @@ header {
 }
 
 
-
 .rotate-btn:active {
     transition: transform 0.6ms;
     transform: rotate(360deg);
     color: blueviolet;
 }
+
 
 </style>
