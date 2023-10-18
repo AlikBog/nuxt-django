@@ -1,18 +1,19 @@
 <template>
-    <v-card :elevation="10" width="280px" class="pa-2">
+    <v-card :elevation="10" width="350px"  class="pa-2">
         <v-img :src="URL_BACK+product.img" height="180px" class="imggr"></v-img>
         <v-card-title class="titlec">{{ product.title }}</v-card-title>
         <v-card-subtitle class="mader">{{ product.made }} руб.</v-card-subtitle>
         <v-card-title class="card">{{ product.cat.name }}</v-card-title>
        <v-card-actions>
-            <v-btn  density="compact" variant="flat" @click="basketStore.add(this.product)" style="background-color: black; color: white;">
+        <v-btn style="background-color: black; color: white;"   variant="flat" @click="basketStore.add(this.product)">
                 Купить
             </v-btn>
               
-            <v-btn>
+            <v-btn style="background-color: black; color: white;">
                 <NuxtLink :to="`/products/${ product.id }`" style="text-decoration: none; color: inherit;">Подробнее...</NuxtLink>
-            </v-btn>
+        </v-btn>
            
+
         </v-card-actions> 
     </v-card>
 </template>
@@ -28,9 +29,18 @@ const { product } = defineProps(['product'])
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 
+
 }
 
 
+
+
+
+
+/* .imggr:hover {
+    transition: transform 2.5s;
+    transform: rotate(360deg);
+} */
 
 
 .mader {
@@ -40,5 +50,4 @@ const { product } = defineProps(['product'])
 }
 
 </style>
-
 
