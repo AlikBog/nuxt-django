@@ -1,4 +1,4 @@
-#!D:\NodeZu\2node\shop\venv\Scripts\python.exe
+#!D:\Shop2\venv\Scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

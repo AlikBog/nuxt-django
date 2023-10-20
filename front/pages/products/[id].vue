@@ -6,6 +6,9 @@
         
         <p> Цена: {{ product.made }} р.</p>
     </v-container>
+    <div class="count">
+
+    </div>
 </template>
   
 <script setup>
@@ -24,13 +27,26 @@ definePageMeta({
   
 <style scoped>
     .id {
-        width: 50%;
+        width: 70%;
         float: left;
         text-align: justify;
-        margin-right: 20px;
+        /* margin-right: 20px; */
     }
 
     #m_top{
         margin-top: 25px;
     }
+
+    .count {
+        display: inline-block;
+        /* float: right; */
+        
+        width: 550px;
+        height: 500px;
+        box-shadow: 10px 10px black;
+        background-image: url('https://img.freepik.com/premium-vector/roll-up-business-banner-design-vertical-template_407821-9.jpg');
+        border-radius: 5px;
+
+    }
+
 </style>
