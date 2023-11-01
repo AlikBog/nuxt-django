@@ -10,8 +10,9 @@
                     <h3 class="itets">iTEST</h3>
                     <v-btn flat to="/" style="font-size: 15px;">Домой</v-btn>
                     <v-btn flat to="/about" style="font-size: 15px;">О нас</v-btn>
+                    <v-btn flat to="/reg" style="font-size: 15px;">Регистрация</v-btn>
+                    <v-btn flat to="/sign" style="font-size: 15px;">Вход</v-btn>
 
-                
                 <v-btn to="/basket" class="text-none" stacked>
                     <v-badge  :content="basketStore.productsTotal" color="error">
                         <v-icon>mdi-cart-outline</v-icon>

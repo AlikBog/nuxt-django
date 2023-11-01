@@ -24,7 +24,6 @@
 
 <script setup>
 const basketStore = useBasketStore()
-// const {data: products} = await useFetch('http://127.0.0.1:8000/api/v1')
 const { data: categories } = await useFetch('http://127.0.0.1:8000/api/v1/category/')
 
 const cat = ref(1)
